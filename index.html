@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Biblioteca</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sistema de Biblioteca</h1>
+
+  <form id="libroForm">
+    <input type="text" id="titulo" placeholder="Título" required />
+    <input type="text" id="autor" placeholder="Autor" required />
+    <input type="number" id="anio" placeholder="Año de publicación" required />
+    <input type="text" id="genero" placeholder="Género" required />
+    <button type="submit">Guardar</button>
+  </form>
+
+  <input type="text" id="buscarInput" placeholder="Buscar por título" />
+  <button onclick="buscarLibro()">Buscar</button>
+
+  <div id="listaLibros"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

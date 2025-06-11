@@ -1,4 +1,126 @@
-html {
-  height: 100%;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  background-color: #bcaeae;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form button {
   width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ad3458;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2f322f;
+}
+
+/* Lista de libros */
+#librosList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.card button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button.edit {
+  background-color: #2196F3;
+  color: white;
+}
+
+.card button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.card button.edit:hover {
+  background-color: #0b7dda;
+}
+
+.card button.delete:hover {
+  background-color: #da190b;
+}
+
+/* Buscador */
+#buscador {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  display: flex;
+}
+
+#buscador input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+#buscador button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+#buscador button:hover {
+  background-color: #45a049;
 }
